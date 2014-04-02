@@ -16,6 +16,9 @@ exports['create application'] = function (test) {
         
         test.ok(fs.existsSync(path.join(dirname, 'site')));
         test.ok(fs.existsSync(path.join(dirname, 'site', 'css')));
+
+        test.ok(fs.existsSync(path.join(dirname, 'ajgenesis')));
+        test.ok(fs.existsSync(path.join(dirname, 'ajgenesis', 'templates')));
         
         removeDirSync(dirname);
         test.done();
